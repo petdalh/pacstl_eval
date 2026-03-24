@@ -38,11 +38,11 @@ pacstl_evaluator/
 | `common/interfaces.py`                     | `TimeStampedState` (time + state array) and `PACReachableSet` (ellipsoid center, A-matrix, b-vector)                |
 | `core/evaluator.py`                        | `PacSTLEvaluator` — parses STL spec, computes interval-valued robustness signals via RTAMT with `PAC_STL` semantics |
 | `core/factory.py`                          | Two-level registry (`domain → rule`); decorator-based rule registration                                             |
-| `core/robustness.py`                       | Min/max optimization of linear and quadratic predicates over ellipsoids (SciPy SLSQP + Brent's method)              |
+| `core/robustness.py`                       | Min/max optimization of linear and quadratic predicates over ellipsoids               |
 | `domains/colregs/predicates.py`            | Halfspace and orientation `AtomicPredicate` subclasses for spatial COLREGs constraints                              |
 | `domains/colregs/robustness_predicates.py` | Interval robustness over ellipsoids for each predicate type                                                         |
-| `domains/colregs/rules.py`                 | `crossing_rule` factory registered under `"colregs"` domain                                                         |
-| `domains/colregs/utils.py`                 | `VesselModel` dataclass; `USV_DEFAULT` (v_max=0.4 m/s, yaw_dot_max=0.8 rad/s)                                       |
+| `domains/colregs/rules.py`                 | rules registered under `"colregs"` domain                                                         |
+| `domains/colregs/utils.py`                 | `VesselModel` dataclass containing `USV_DEFAULT` and `EGO_VESSEL_DEFAULT`                                       |
 
 ## Dependencies
 
