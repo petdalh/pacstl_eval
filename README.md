@@ -54,7 +54,7 @@ pacstl_evaluator/
 | **SciPy**                                                                             | SLSQP & eigenvalue solvers    | Standard (PyPI)                              |
 ## Example Usage: Planar Robot
 
-The repository includes a COLREGs (maritime traffic rules) domain implementation, but the core pacSTL functionality is domain-agnostic. This section walks through extending the package to a minimal new domain: a planar robot monitoring whether another agent stays at a safe distance. A full runnable example can be found in `example.py`
+The repository includes a COLREGs (maritime traffic rules) domain implementation, but the core pacSTL functionality works for other domains. This section walks through extending the package to a minimal new domain: a planar robot monitoring whether another agent stays at a safe distance. A full runnable example can be found in `example.py`
 
 #### 1. Define a robustness calculator
 
